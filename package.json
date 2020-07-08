@@ -22,7 +22,9 @@
     "react-component"
   ],
   "dependencies": {
+    "@babel/core": "^7.10.4",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
