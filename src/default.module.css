@@ -1,0 +1,55 @@
+.slider{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.minBall,
+.maxBall{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FF800D;
+}
+
+.midline{
+    height: 4px;
+    background-color: #FFC895;
+    align-self: center;
+}
+
+.line{
+    height: 4px;
+    background-color: #999999;
+    align-self: center;
+}
+
+.values{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.minValue{
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.maxValue{
+    text-align: right;
+    justify-self: end;
+    white-space: nowrap;
+    direction: rtl;
+}
+
+.minValueNumber{
+    text-align: left;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.maxValueNumber{
+    direction: ltr;
+    -webkit-user-select: none;
+    user-select: none;
+    display: inline-block;
+}
