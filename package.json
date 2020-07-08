@@ -21,7 +21,13 @@
     "widget",
     "react-component"
   ],
-  "author": "RV",
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "author": "Reijo Vosu",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/reijovosu/react-range-slider/issues"
