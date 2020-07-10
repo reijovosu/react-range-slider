@@ -24,7 +24,7 @@ const Slider = ({
     const [sliderRef, { width }] = useDimensions();
     const [minRef, { width: minWidth }] = useDimensions();
     const [maxRef, { width: maxWidth }] = useDimensions();
-    const [values, setValues] = useState({ min: min, max: max, minValue: minValue, maxValue: maxValue });
+    const [values, setValues] = useState({ min: parseInt(min), max: parseInt(max), minValue: parseInt(minValue), maxValue: parseInt(maxValue) });
 
     const minStartX = useRef(0);
     const maxStartX = useRef(0);
