@@ -66,6 +66,7 @@ const Slider = ({
     const handleMouseDown = (e, isMin) => {
         if (isMin === true) {
             if (e.touches && e.touches.length > 0) {
+                e.preventDefault();
                 minStartX.current = e.touches[0].clientX;
             } else {
                 minStartX.current = e.clientX;
@@ -139,10 +140,10 @@ const Slider = ({
         document.removeEventListener('mousemove', handleMaxDrag);
         document.removeEventListener('mouseup', handleDragEnd);
         document.removeEventListener('touchmove', handleMinDrag, {
-            passive: true
+            passive: false
         });
         document.removeEventListener('touchmove', handleMaxDrag, {
-            passive: true
+            passive: false
         });
         document.removeEventListener('touchend', handleDragEnd);
         document.removeEventListener('touchcancel', handleDragEnd);
