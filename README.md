@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/378124/87159763-89d76b00-c2ca-11ea-8435-8817a321ff0c.png)
 
-##Install
+## Install
 
 using npm: 
 `npm install @reijovosu/react-range-slider`
