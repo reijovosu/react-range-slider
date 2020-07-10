@@ -82,6 +82,7 @@ const Slider = ({
             document.addEventListener('touchmove', handleMaxDrag, { passive: false });
         }
         document.addEventListener('mouseup', handleDragEnd);
+        document.addEventListener('touchend', handleDragEnd);
         document.addEventListener('touchcancel', handleDragEnd);
     }
 
