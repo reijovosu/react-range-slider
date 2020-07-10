@@ -74,6 +74,6 @@ export default App;
   
 Examle: [https://github.com/reijovosu/react-range-slider/blob/master/src/styles.js](https://github.com/reijovosu/react-range-slider/blob/master/src/styles.js)
 
-- moduleStyles - css module file.
+- **moduleStyles** - css module file.
 
 Example: [https://github.com/reijovosu/react-range-slider/blob/master/src/default.module.css](https://github.com/reijovosu/react-range-slider/blob/master/src/default.module.css)
