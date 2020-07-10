@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --host 0.0.0.0 --mode development --open --hot",
     "build": "webpack -mode production"
   },
   "keywords": [],
   "author": "RV",
   "license": "ISC",
   "dependencies": {
+    "@reijovosu/react-range-slider": "file:.yalc/@reijovosu/react-range-slider",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",

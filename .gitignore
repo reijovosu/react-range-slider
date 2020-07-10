@@ -22,6 +22,7 @@ chrome-user-data
 *.iml
 .vscode
 *.swp
+*yalc*
 *.swo
 
 packages/react-devtools-core/dist
