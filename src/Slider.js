@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import defaultStyles from './default.module.css';
 import { styles as defaultStylesObj } from './styles';
 import { mergeObj } from './utils';
-import useDimensions from 'react-use-dimensions';
+import useDimensions from './useDimentions';
 
 const Slider = ({
     min,
@@ -13,8 +13,7 @@ const Slider = ({
     moduleStyles,
     display,
     onChange,
-    onChangeActive,
-    ...props
+    onChangeActive
 }) => {
     const styles = mergeObj(true, defaultStylesObj, stylesObj);
 
@@ -59,7 +58,7 @@ const Slider = ({
         });
 
         if (finished) {
-            onChange(values);
+            typeof onChange === 'function' && onChange(values);
             setFinished(false);
         }
     }, [width, values, minWidth, maxWidth, finished, onChange]);
@@ -148,7 +147,6 @@ const Slider = ({
         document.removeEventListener('touchcancel', handleDragEnd);
         setFinished(true);
     }
-
     return (<>
         <div
             style={sliderStyle}
