@@ -2,7 +2,7 @@
   "name": "@reijovosu/react-range-slider",
   "version": "1.0.0",
   "description": "small react range slider component",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "directories": {
     "example": "examples"
   },
