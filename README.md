@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/378124/87159763-89d76b00-c2ca-11ea-8435-8817a321ff0c.png)
 
-##Install
+## Install
 
 using npm: 
 `npm install @reijovosu/react-range-slider`
@@ -68,9 +68,9 @@ export default App;
 - **maxValue** - maximum slider value
 - **onChange** - event that fires after sliding ends
 	- returns `{min: min, max: max, minValue: minValue, maxValue: maxValue}`
-- onChangeActive that event that fires when sliding 
+- **onChangeActive** that event that fires when sliding 
 	- returns `{min: min, max: max, minValue: minValue, maxValue: maxValue}`
-- stylesObj - object for styling slider.
+- **stylesObj** - object for styling slider.
   
 Examle: [https://github.com/reijovosu/react-range-slider/blob/master/src/styles.js](https://github.com/reijovosu/react-range-slider/blob/master/src/styles.js)
 
